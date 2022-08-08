@@ -4,7 +4,7 @@ const Title = () => {
 
 // let list = [];
     return (
-        <h1 className='Title'>
+        <h1 className='title'>
             To Do List
         </h1>
     )

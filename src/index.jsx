@@ -3,7 +3,11 @@
 // То есть вызывет ReactDOM.createRoot(HTML-element...).render(components...) 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+// styles
+import './components/Menu.css';
 import './index.css';
+
 import App from './App';
 // import reportWebVitals from './reportWebVitals'; // стандартные тесты на производительность, пока не важно
 
