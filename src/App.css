@@ -1,0 +1,58 @@
+/* style neonText */
+.title-page h1{
+    color: #fff;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 20px #0fa;
+    text-align: center;
+}
+
+p {
+    color: white;
+    margin: 0;
+}
+
+
+
+
+/* -------------MENU----------- */
+/* url(https://fonts.googleapis.com/css?family=Lora); */
+
+ul {
+    list-style: none; 
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    transition: .3s linear;
+  }
+  i {
+    margin-right: 10px;
+  }
+  nav {
+    display: block;
+    width: 660px;
+    border-bottom: 5px solid #060607;;
+    /* margin: 0 auto 30px; */
+  }
+  
+  .four ul {
+    display: -webkit-flex; 
+    display: flex;
+    /* по центру */
+    justify-content:center; 
+    background: #282c33;
+    padding-left: 0;
+  }
+  .four a {
+    padding: 1em;
+    display: block;
+    color: #ffffff;
+    border-right: 1px solid #060607;
+    background: #282c33;
+  }
+  .four a:hover {
+    background: #000000;
+    color: rgb(112, 111, 111);
+  }
