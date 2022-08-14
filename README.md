@@ -1,3 +1,10 @@
+<ul>hierarchy of components (Иерархия компонентов):
+  <li>index.html -></li>
+  <li>index.jsx(Layout.jsx) -></li>
+  <li>App.jsx(ListMenu + Routing: Home.jsx, About.jsx, Error.jsx) -></li>
+  <li>Home.jsx -> {TodoItem -> Check} -></li>
+</ul>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
