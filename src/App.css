@@ -1,5 +1,5 @@
 /* style neonText */
-.title-page h1{
+.title-page h1 {
     color: #fff;
     text-shadow:
         0 0 8px #fff,
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-p {
+p, .layout {
     color: white;
     margin: 0;
 }
@@ -15,7 +15,7 @@ p {
 
 
 
-/* -------------MENU----------- */
+/*! -------------MENU----------- */
 /* url(https://fonts.googleapis.com/css?family=Lora); */
 
 ul {
@@ -56,3 +56,66 @@ ul {
     background: #000000;
     color: rgb(112, 111, 111);
   }
+
+
+
+
+
+
+
+
+
+  /*! -------Todo components------------ */
+  .todos {
+    margin-top: 3%;
+  }
+
+  .todo_item {
+    /* неоновая рамка */
+    box-shadow:
+        0 0 8px #fff,
+        0 0 20px #0fa;
+    border-radius: 0.5em;
+    border: solid 2px #fff;
+    /* отступы между item */
+    margin: 0.2em;
+    /* внутринние отступы item */
+    padding: 10px;
+  }
+
+  .todo_item p {
+    padding-left: 4.5%;
+    /* при наведении на параграф item todo появлялся курсор */
+    cursor: pointer;
+  }
+
+
+
+/*! -------Check-box: Квадратик и галочка---------- */
+/* ? ОПЫТ: не в коем случае после фигурных скобок точку с запятой не ставить, иначе стили не работает после ; - и хрен узнаешь */
+/*  квадратик */
+.check_box  {
+  position: absolute;
+  border: solid 1.7px #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 0.3em;
+  /* при наведении на параграф item todo появлялся курсор */
+  cursor: pointer;
+}  
+/* галочка */
+.check_icon {
+  color: white;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 14px;
+  height: 8px;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px currentColor;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-45deg);
+
+}
+
+

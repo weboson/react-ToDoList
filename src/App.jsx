@@ -21,7 +21,7 @@ import {
 // import as object: https://learn.javascript.ru/import-export#import
 import * as data from './data/data';
 // Список li-меню
-import ListMenu from "./components/Menu";
+import ListMenu from "./components/menu/ListMenu";
 // pages
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
@@ -39,6 +39,7 @@ function App() {
 
   return (
     <Router>
+    {/* МЕНЮ (на всех старницах) */}
     {/* nav и class="four" для стилей */}
     <nav className="four"> 
         <ul>
@@ -48,7 +49,7 @@ function App() {
         </ul>
     </nav>
 
-    
+    {/* СТРАНИЦЫ  */}
     <Routes>
         {/* <Route exact path="" element={<Home />} />  - компонент/тег можно заркыть сразу "/" так тоже сработает*/}
         <Route exact path="/" element={<Home />}>        

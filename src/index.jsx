@@ -1,8 +1,16 @@
-// файл №2 (по иерархии)
+// иерархия компонентов: 
+// index.html -> 
+// index.jsx(Layout.jsx)-> 
+// App.jsx(ListMenu + Routing: Home.jsx, About.jsx, Error.jsx) -> 
+// Home.jsx -> {TodoItem -> Check}
+
+
 // index.jsx - рендерит.
 // То есть вызывет ReactDOM.createRoot(HTML-element...).render(components...) 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// общий макет
+import Layout from './components/layout/Layout';
 
 // styles
 import './index.css';
@@ -14,7 +22,11 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Layout - это общий макет, который обертывает App, такое увидел в видео 23:49: https://youtu.be/sAa71agGwcg?t=1429 */}
+    <Layout>
+      <App />
+    </Layout>
+    
   </React.StrictMode>
 );
 

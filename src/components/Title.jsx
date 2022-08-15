@@ -12,7 +12,7 @@ const Title = (props) => {
             <div className='title-page'>
                 <h1>{props.dataTitle.h1}</h1>
                 <p>{props.dataTitle.firstParagraph}</p>
-                {/* если имеется в данных, то вывести secondParagraph */}
+                {/* если имеется в данных, то вывести secondParagraph (переменная выше, строка 9) */}
                 {secondParagraph}
             </div>
     )
