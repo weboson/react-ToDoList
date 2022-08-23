@@ -2,7 +2,7 @@
   <li>index.html -></li>
   <li>index.jsx(Layout.jsx) -></li>
   <li>App.jsx(ListMenu + Routing: Home.jsx, About.jsx, Error.jsx) -></li>
-  <li>Home.jsx -> {TodoItem -> Check + TodoPartagraph} -></li>
+  <li>Home.jsx -> {TodoItem -> Check + TodoPartagraph, Trash} -></li>
 </ul>
 
 # Getting Started with Create React App

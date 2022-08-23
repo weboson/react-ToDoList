@@ -22,8 +22,9 @@ const Check = ({isComleted, todo, changeTodo}) => {
         // произвел подъем обработчика состояния "changeTodo" по пути: Home -> TodoItem(посредник) -> Check
         // Источник инфы "подъем состояния" (в игре): https://ru.reactjs.org/tutorial/tutorial.html#lifting-state-up
         // Код игры, где используется "подъем", там Board является посредником между из Game в Square: https://codepen.io/gaearon/pen/gWWZgR?editors=0010
+        //?менять стили можно еще так: className={`color: red; ${isComleted ? 'color: black;' : ''}`} - используя {`${}`} подробнее: https://youtu.be/sAa71agGwcg?t=1885
         <div className='check_box' onClick={() => changeTodo(todo._id)}>
-            {/* если isComleted = true (которую меняет обработчик changeTodo), то появится галочка */}
+            {/* если isComleted = true (которую меняет обработчик changeTodo), то появится CSS-галочка */}
             {isComleted && <div className="check_icon"></div>}       
         </div>
         

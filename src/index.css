@@ -10,7 +10,7 @@ body {
 /* Ширина страницы (меню, контент) */
 body {
   display: block;
-  width: 660px;
+  width: 990px;
   margin: 0 auto 30px;
   background-color: #15171B;
 }

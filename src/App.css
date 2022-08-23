@@ -32,7 +32,7 @@ ul {
   }
   nav {
     display: block;
-    width: 660px;
+    width: 100%;
     border-bottom: 5px solid #060607;;
     /* margin: 0 auto 30px; */
   }
@@ -71,6 +71,10 @@ ul {
   }
 
   .todo_item {
+    /* чтобы все элменты в этом блоке расположились по горизонтали (а чтобы растянулись по сторонам нужно в элментах: */
+    display:flex;
+    /* чтобы Check был по-центру по вертикали */
+    align-items:center;
     /* неоновая рамка */
     box-shadow:
         0 0 8px #fff,
@@ -81,16 +85,37 @@ ul {
     margin: 0.2em;
     /* внутринние отступы item */
     padding: 10px;
+    /* плавное изменение при на ведении */
+    transition: .3s ease;
   }
 
   .todo_item p {
     padding-left: 4.5%;
     /* при наведении на параграф item todo появлялся курсор */
     cursor: pointer;
+    /* плавное изменение при на ведении */
+    transition: .3s ease;
   }
 
+/* при наведении */
+  .todo_item:hover {
+    box-shadow:
+        0 0 10px #fff,
+        0 0 25px #0fa;
+    /* padding-bottom: 12px; */
+  }
 
-
+/* при наведении */
+  .todo_item p {
+    font-size: 1.3em;
+    /* flex-grow - чтобы элемент растянулся: */
+    /* Определяет возможность элемента увеличиваться в размере, при необходимости заполняя весь flex-контейнер. */
+    /* 0 запрещено. 1 разрешено. Подробнее: https://fls.guru/flexbox.html */ 
+    flex-grow:1;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 20px #0fa; 
+  }
 /*! -------Check-box: Квадратик и галочка---------- */
 /* ? ОПЫТ: не в коем случае после фигурных скобок точку с запятой не ставить, иначе стили не работает после ; - и хрен узнаешь */
 /*  квадратик */
@@ -103,8 +128,9 @@ ul {
   /* при наведении на параграф item todo появлялся курсор */
   cursor: pointer;
 }  
-/* галочка */
+/* CSS-галочка */
 .check_icon {
+  align-items:center;
   color: white;
   position: absolute;
   margin-left: 0px;
@@ -121,3 +147,16 @@ ul {
 .comleted_todo_title {
   text-decoration: line-through;
 }
+
+
+/*! иконка корзина (компонент Tarsh.jsx) из плагина React-icons  */
+.trash-icon {
+  color:#3f3f3f;
+  transition: .3s ease;
+  /* размеры указаны на месте в синтаксисе: <GoTrashcan size="26px"/> */
+}
+
+.trash-icon:hover {
+  color: rgb(255, 0, 0);
+}
+
