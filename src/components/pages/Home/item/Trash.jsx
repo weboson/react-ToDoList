@@ -1,7 +1,7 @@
 import React from 'react';
-//isComleted
 //! плагин react-icons
 import { GoTrashcan } from 'react-icons/go';
+
 
 const Trash = ({ todo, removeTodo }) => {
     return (

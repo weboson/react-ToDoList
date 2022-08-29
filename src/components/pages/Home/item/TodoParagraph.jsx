@@ -3,10 +3,10 @@ import React from 'react';
 // текст в нутри TodoItem, который в зависимости от isComleted ИМЕЕТ СТИЛИ (ЗАЧЕРНУТЫЙ ТЕКСТ) 
 // если класс crossed_out_todo_title, то срабатывают стили для него
 // есть два способа: по условию рендерить врестку, или просто назначать класс (выбрал этот, так как без повторного рендера, хотя React умный и рендерит толкьо изменения - но возможно самоме минимальное это один блок)
-const TodoParagraph = ({isComleted, todo}) => {
+const TodoParagraph = ({todo}) => {
     return (
-        // isComleted ? <p className="crossed_out_todo_title"> {todo.title}</p> : <p> {todo.title}</p> 
-        <p className={isComleted ? 'comleted_todo_title': ""}>{todo.title}</p>
+        // isCompleted ? <p className="crossed_out_todo_title"> {todo.title}</p> : <p> {todo.title}</p> 
+        <p className={todo.isCompleted ? 'comleted_todo_title' : ""}>{todo.title}</p>
     )
 }
 

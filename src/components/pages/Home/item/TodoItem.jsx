@@ -17,9 +17,10 @@ const TodoItem = ({todo, changeTodo, removeTodo}) => { // todo и changeTodo т�
         // код метода changeTodo(id 'элемента), который изменяет состояние, находится в Home.jsx
          <div className='todo_item'>
             {/* checkbox */}
-            <Check isComleted={todo.isComleted} todo={todo} changeTodo={changeTodo}/>
-        {/* параграф который внутри totoitem и в зависимости от isComleted зачеркнут или нет */}
-            < TodoParagraph isComleted={todo.isComleted} todo={todo}/>
+            <Check isCompleted={todo.isCompleted} todo={todo} changeTodo={changeTodo}/>
+        {/* параграф который внутри totoitem и в зависимости от isCompleted зачеркнут или нет */}
+            {/* < TodoParagraph isCompleted={todo.isCompleted} todo={todo}/> */}
+            < TodoParagraph todo={todo}/>
             {/* корзина (компонент->иконка) для удаления */}
             <Trash todo={todo} removeTodo={removeTodo}/>
         </div>
