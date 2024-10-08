@@ -9,26 +9,12 @@ const ListMenu = (props) => { // передаю пропсом <Listmenu  dataMe
     let numbers = 1;
     return (
         props.dataMenu.map((item, index) => {
-            if (item === "Home") {
                 return (
-                    // ключ "key" в элементе списка (в <li>, но не в ссылке Link/a)
-                    // 1) вариант для генерации ключа (key) numbers[index].toString() -  numbers[индекс из map]. в строку
-                    // 2) вариант: Инкрементация ++ увеличивает переменную на 1: number++
-                    <ItemMenu key = {numbers++} to = '/' item = {item} />
-                    // в зависимости от пропсов, компонент формирует верстку
-                    // <li key={numbers++}>  
-                    //     <Link to="/" >{item}</Link>
-                    // </li>
-                )
-                
-            } else {
-                return (
-                <ItemMenu key = {numbers++} to = {item} item = {item} />
+                <ItemMenu key = {numbers++} to={item.to} title={item.title} />
                 // <li key={numbers++}>
                 //     <Link to={item}>{item}</Link>
                 // </li>
                 )
-            }
         })
     )
 }

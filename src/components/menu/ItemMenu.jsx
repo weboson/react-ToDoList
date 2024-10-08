@@ -12,7 +12,7 @@ const ListMenu = (props) => {
         // переданный ключ "key" не нужно вставлять в назначенный компонент. То есть вот так не нужно: <li key={result.key}></li> - можно просто передать и все:
         // <ItemMenu key = {numbers++} />
         <li>  
-            <Link to={props.to} >{props.item}</Link>
+            <Link to={props.to} >{props.title}</Link>
         </li>
     )
 }

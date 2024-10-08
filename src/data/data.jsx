@@ -3,7 +3,11 @@
 // title pages
 // this can be put into a database
 // экспорт массива: https://learn.javascript.ru/import-export#eksport-do-obyavleniya
-export let dataMenu = ["Home", "About", "Error"];
+export let dataMenu = [
+    {to: 'react-ToDoList/', title: 'Home'},
+    {to: 'react-ToDoList/about', title: 'About'},
+    {to: 'react-ToDoList/error', title: 'Error'}
+]
 
 
 // данные для заголовков и параграфов на определенных страницах

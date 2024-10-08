@@ -52,11 +52,11 @@ function App() {
     {/* СТРАНИЦЫ  */}
     <Routes>
         {/* <Route exact path="" element={<Home />} />  - компонент/тег можно заркыть сразу "/" так тоже сработает*/}
-        <Route exact path="/" element={<Home />}>        
+        <Route exact path="/react-ToDoList/" element={<Home />}>        
         </Route>
-        <Route path="/about" element={<About />}>
+        <Route path="/react-ToDoList/about" element={<About />}>
         </Route>
-        <Route path="/error" element={<Error />}>
+        <Route path="/react-ToDoList/error" element={<Error />}>
         </Route>
     </Routes>
 </Router>    
