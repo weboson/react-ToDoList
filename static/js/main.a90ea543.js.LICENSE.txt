@@ -1,0 +1,85 @@
+/**
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * React Router DOM v6.3.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.3.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+//! ВАЖНО: Чтобы ПЕРЕДАТЬ В ОБРАБОТЧИК для изменения СОСТОЯНИЕ (state), нужно использовать 1 из 3 вариантов: https://ru.reactjs.org/docs/handling-events.html#gatsby-focus-wrapper
+
+//! ОБРАБОТЧИК - (Done!) меняющий состояние
+
+//! Роутинг с помощью плагина react-router-dom
+
+//! СОСТОЯНИЕ
+
+//! ХУК useState() - использую хук состояния
+
+//! иначе в данном случае, добавлялась только одна todo-задача, а если еще раз ввести задачу, то она обновит старую, но количество останется прежним 4 todo-item
+
+//! мутировать состояние нельзя, т. е. примерно так нельзя:
+
+//! обработчик отправки текста (title) с поля-input и генерация нового объекта в массив todos
+
+//! плагин react-icons
+
+//! потом уже присваивать ГОТОВЫЕ изменения
+
+//! сналча копию copyArr
+
+//!- this.nameState <- не врено

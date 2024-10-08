@@ -1,0 +1,24 @@
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#15171b;display:block;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0;margin:0 auto 30px;width:990px}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}.title-page h1{color:#fff;text-align:center;text-shadow:0 0 8px #fff,0 0 20px #0fa}.layout,p{color:#fff;margin:0}
+
+
+
+
+/*! -------------MENU----------- */ul{list-style:none;margin:0 auto}a{font-family:Lora,serif;text-decoration:none;transition:.3s linear}i{margin-right:10px}nav{border-bottom:5px solid #060607;display:block;width:100%}.four ul{display:flex;justify-content:center;padding-left:0}.four a,.four ul{background:#282c33}.four a{border-right:1px solid #060607;color:#fff;display:block;padding:1em}.four a:hover{background:#000;color:#706f6f}
+
+
+
+
+
+
+
+
+
+  /*! -------Todo components------------ */.todos{margin-top:3%}.todo_item{align-items:center;border:2px solid #fff;border-radius:.5em;box-shadow:0 0 8px #fff,0 0 20px #0fa;display:flex;margin:.2em;padding:10px;transition:.3s ease}.todo_item p{cursor:pointer;padding-left:4.5%;transition:.3s ease}.todo_item:hover{box-shadow:0 0 10px #fff,0 0 25px #0fa}.todo_item p{flex-grow:1;font-size:1.3em;text-shadow:0 0 4px #fff,0 0 20px #0fa}
+/*! -------Check-box: Квадратик и галочка---------- */.check_box{border:1.7px solid #fff;border-radius:.3em;cursor:pointer;height:16px;position:absolute;width:16px}.check_icon{align-items:center;border-bottom:2px solid;border-left:2px solid;color:#fff;height:8px;margin-left:0;margin-top:0;position:absolute;-webkit-transform:rotate(-5deg);transform:rotate(-45deg);width:14px}.comleted_todo_title{text-decoration:line-through}
+
+
+/*! иконка корзина (компонент Tarsh.jsx) из плагина React-icons  */.trash-icon{color:#3f3f3f;transition:.3s ease}.trash-icon:hover{color:red}
+
+
+/* ! поле ввода*/.create-todo-field{margin:.2em}.text-field-input{align-items:center;background-color:initial;border:.1px solid #fff;border-radius:.5em;box-shadow:0 0 4px #fff,0 0 6px #0fa;box-sizing:border-box;color:#fff;display:inline-flex;font-size:1.3em;margin-right:3px;padding:10px;position:relative;transition:.3s ease;width:100%}
+/*# sourceMappingURL=main.607f2f80.css.map*/
